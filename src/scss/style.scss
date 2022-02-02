@@ -1,11 +1,10 @@
-
-@import "mixins/font-include";
-
-@import "global/null";
+@import "global/reset";
 @import "global/fonts";
 @import "global/variables";
-@import "global/vendor";
 @import "global/page";
 @import "global/global";
+// @import "global/_vendor";
+
+@import "utils/mixins";
 
 // @import "header";

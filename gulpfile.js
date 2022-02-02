@@ -21,7 +21,7 @@ import {images} from "./gulp/tasks/images.js";
 import {svgSprites} from "./gulp/tasks/svgSprites.js";
 import {zip} from "./gulp/tasks/zip.js";
 import {ftp} from "./gulp/tasks/ftp.js";
-import {fontsMovingWoffTwo, fontsMovingWoff} from "./gulp/tasks/fonts.js";
+import {fontsMoving} from "./gulp/tasks/fonts.js";
 
 function watcher() {
     gulp.watch(path.watch.files, copy)
@@ -33,7 +33,7 @@ function watcher() {
 
 export { svgSprites }
 
-const fonts = gulp.series(fontsMovingWoffTwo, fontsMovingWoff)
+const fonts = gulp.series(fontsMoving)
 
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
 
