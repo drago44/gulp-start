@@ -1,0 +1,14 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  overflow: auto;
+
+  min-height: 100%;
+  margin: 0;
+}
